@@ -21,14 +21,15 @@ public class BibliotecaApp {
         booksToAdd.add(girlWithDragonTattoo);
         booksToAdd.add(lordOfTheRings);
 
-        //Passing Set books_to_add to bangalore_library
+        //Storing books inside Bangalore's Library
         Library bangaloreLibrary = new Library(booksToAdd);
 
+        //Initializing application
         System.out.println(Notification.welcome);
         System.out.print("Menu options - List of books (option 1) ");
         String userInput = sc.nextLine();
 
-
+        //Waiting for user input and reacting accordingly
         while (!userInput.equals("option 1") && !userInput.equals("quit")) {
             System.out.print(Notification.invalidOption);
             userInput = sc.nextLine();
@@ -36,6 +37,14 @@ public class BibliotecaApp {
 
         if (userInput.equals("option 1")) {
             System.out.println(bangaloreLibrary);
+            System.out.print("Borrow a book by entering 'borrow' followed by the book id or return one by entering 'return' followed by the book id: ");
+            userInput = sc.nextLine();
+
+            if (userInput.contains("borrow")) {
+                String[] inputArray = userInput.split("\\s");
+                int id = Integer.parseInt(inputArray[1]);
+                System.out.println(bangaloreLibrary.checkoutBook(id));
+            }
         }
 
         if (userInput.equals("quit")) {
