@@ -25,5 +25,8 @@ public class Notification {
         return "That is not a valid book to return. ";
     }
 
+    static String onQuit() {
+        return "Thanks for using Bangalore's Library systems, we hope to see you back soon.";
+    }
 
 }

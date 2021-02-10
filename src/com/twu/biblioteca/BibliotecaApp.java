@@ -29,13 +29,17 @@ public class BibliotecaApp {
         String userInput = sc.nextLine();
 
 
-        while (!userInput.equals("option 1")) {
+        while (!userInput.equals("option 1") && !userInput.equals("quit")) {
             System.out.print(Notification.invalidOption());
             userInput = sc.nextLine();
         }
 
         if (userInput.equals("option 1")) {
             System.out.println(bangalore_library);
+        }
+
+        if (userInput.equals("quit")) {
+            System.out.println(Notification.onQuit());
         }
 
 
