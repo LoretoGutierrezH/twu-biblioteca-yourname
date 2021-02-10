@@ -1,17 +1,29 @@
 package com.twu.biblioteca;
 
 public class Notification {
-    protected String message;
-
-    public Notification(String message) {
-        this.message = message;
+    static String welcome() {
+        return "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
     }
 
-    public String getMessage() {
-        return message;
+    static String invalidOption() {
+        return "Please, select a valid option! ";
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    static String successfulCheckout() {
+        return "Thank you! Enjoy the book.";
     }
+
+    static String unsuccessfulCheckout() {
+        return "Sorry, that book is not available! ";
+    }
+
+    static String successfulReturn() {
+        return "Thank you for returning the book!";
+    }
+
+    static String unsuccessfulReturn() {
+        return "That is not a valid book to return. ";
+    }
+
+
 }

@@ -24,14 +24,13 @@ public class BibliotecaApp {
         //Passing Set books_to_add to bangalore_library
         Library bangalore_library = new Library(books_to_add);
 
-        Notification cmd_line_notification = new Notification("Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!");
-        System.out.println(cmd_line_notification.message);
+        System.out.println(Notification.welcome());
         System.out.print("Menu options - List of books (option 1) ");
         String userInput = sc.nextLine();
 
 
         while (!userInput.equals("option 1")) {
-            System.out.print("Please, select a valid option!: ");
+            System.out.print(Notification.invalidOption());
             userInput = sc.nextLine();
         }
 
