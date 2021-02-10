@@ -1,12 +1,14 @@
 package com.twu.biblioteca;
 
 import java.util.HashSet;
+import java.util.Scanner;
 import java.util.Set;
 
 public class BibliotecaApp {
     public static void main(String[] args) {
-        Notification cmd_line_notification = new Notification("Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!");
-        System.out.println(cmd_line_notification.message);
+
+        Scanner sc = new Scanner(System.in);
+
 
         //Creating 4 books and adding them to Set books_to_add
         Book starmaker = new Book(1, "Starmaker", "Olaf Stapledon", 1937);
@@ -22,7 +24,17 @@ public class BibliotecaApp {
         //Passing Set books_to_add to bangalore_library
         Library bangalore_library = new Library(books_to_add);
 
-        System.out.println(bangalore_library);
+        Notification cmd_line_notification = new Notification("Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!");
+        System.out.println(cmd_line_notification.message);
+        System.out.print("Menu options - List of books (option 1) ");
+        String userInput = sc.nextLine();
+
+        if (userInput.equals("option 1")) {
+            System.out.println(bangalore_library);
+        } else {
+            System.out.println("Something happened");
+        }
+
 
     }
 }
