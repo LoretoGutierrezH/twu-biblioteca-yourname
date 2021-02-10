@@ -1,32 +1,18 @@
 package com.twu.biblioteca;
 
 public class Notification {
-    static String welcome() {
-        return "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
-    }
+    static String welcome = "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
 
-    static String invalidOption() {
-        return "Please, select a valid option! ";
-    }
+    static String invalidOption = "Please, select a valid option!";
 
-    static String successfulCheckout() {
-        return "Thank you! Enjoy the book.";
-    }
+    static String successfulCheckout = "Thank you! Enjoy the book.";
 
-    static String unsuccessfulCheckout() {
-        return "Sorry, that book is not available! ";
-    }
+    static String unsuccessfulCheckout = "Sorry, that book is not available! ";
 
-    static String successfulReturn() {
-        return "Thank you for returning the book!";
-    }
+    static String successfulReturn = "Thank you for returning the book!";
 
-    static String unsuccessfulReturn() {
-        return "That is not a valid book to return. ";
-    }
+    static String unsuccessfulReturn = "That is not a valid book to return. ";
 
-    static String onQuit() {
-        return "Thanks for using Bangalore's Library systems, we hope to see you back soon.";
-    }
+    static String onQuit = "Thanks for using Bangalore's Library systems, we hope to see you back soon.";
 
 }

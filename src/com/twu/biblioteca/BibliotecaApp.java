@@ -24,13 +24,13 @@ public class BibliotecaApp {
         //Passing Set books_to_add to bangalore_library
         Library bangaloreLibrary = new Library(booksToAdd);
 
-        System.out.println(Notification.welcome());
+        System.out.println(Notification.welcome);
         System.out.print("Menu options - List of books (option 1) ");
         String userInput = sc.nextLine();
 
 
         while (!userInput.equals("option 1") && !userInput.equals("quit")) {
-            System.out.print(Notification.invalidOption());
+            System.out.print(Notification.invalidOption);
             userInput = sc.nextLine();
         }
 
@@ -39,7 +39,7 @@ public class BibliotecaApp {
         }
 
         if (userInput.equals("quit")) {
-            System.out.println(Notification.onQuit());
+            System.out.println(Notification.onQuit);
         }
 
 
