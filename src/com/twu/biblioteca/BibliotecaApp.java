@@ -13,16 +13,16 @@ public class BibliotecaApp {
         //Creating 4 books and adding them to Set books_to_add
         Book starmaker = new Book(1, "Starmaker", "Olaf Stapledon", 1937);
         Book dune = new Book(2, "Dune", "Frank Herbert", 1965);
-        Book the_girl_with_dragon_tattoo = new Book(3, "The Girl with The Dragon Tattoo", "Stieg Larsson", 2005);
-        Book the_lord_of_the_rings = new Book(4, "The Lord of The Rings", "J. R. R. Tolkien", 1954);
-        Set<Book> books_to_add = new HashSet<Book>();
-        books_to_add.add(starmaker);
-        books_to_add.add(dune);
-        books_to_add.add(the_girl_with_dragon_tattoo);
-        books_to_add.add(the_lord_of_the_rings);
+        Book girlWithDragonTattoo = new Book(3, "The Girl with The Dragon Tattoo", "Stieg Larsson", 2005);
+        Book lordOfTheRings = new Book(4, "The Lord of The Rings", "J. R. R. Tolkien", 1954);
+        Set<Book> booksToAdd = new HashSet<Book>();
+        booksToAdd.add(starmaker);
+        booksToAdd.add(dune);
+        booksToAdd.add(girlWithDragonTattoo);
+        booksToAdd.add(lordOfTheRings);
 
         //Passing Set books_to_add to bangalore_library
-        Library bangalore_library = new Library(books_to_add);
+        Library bangaloreLibrary = new Library(booksToAdd);
 
         System.out.println(Notification.welcome());
         System.out.print("Menu options - List of books (option 1) ");
@@ -35,7 +35,7 @@ public class BibliotecaApp {
         }
 
         if (userInput.equals("option 1")) {
-            System.out.println(bangalore_library);
+            System.out.println(bangaloreLibrary);
         }
 
         if (userInput.equals("quit")) {

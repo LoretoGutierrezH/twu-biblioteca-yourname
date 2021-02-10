@@ -4,21 +4,25 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Library {
-    public Set<Book> available_books = new HashSet<Book>();
+    public Set<Book> availableBooks = new HashSet<Book>();
 
-    public Library(Set available_books) {
-        this.available_books = available_books;
+    public Library(Set availableBooks) {
+        this.availableBooks = availableBooks;
     }
 
     public Set getLibrary() {
-       return available_books;
+       return availableBooks;
     }
 
-    public int size() {
-        return available_books.size();
+    public void checkoutBook() {
+
+    }
+
+    public void returnBook() {
+
     }
 
     public String toString() {
-        return "Library: (" + available_books + " )";
+        return "Library: (" + availableBooks + " )";
     }
 }
