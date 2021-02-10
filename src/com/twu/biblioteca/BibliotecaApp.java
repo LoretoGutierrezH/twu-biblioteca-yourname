@@ -29,11 +29,16 @@ public class BibliotecaApp {
         System.out.print("Menu options - List of books (option 1) ");
         String userInput = sc.nextLine();
 
+
+        while (!userInput.equals("option 1")) {
+            System.out.print("Please, select a valid option!: ");
+            userInput = sc.nextLine();
+        }
+
         if (userInput.equals("option 1")) {
             System.out.println(bangalore_library);
-        } else {
-            System.out.println("Something happened");
         }
+
 
 
     }
