@@ -3,7 +3,11 @@ package com.twu.biblioteca;
 public class Notification {
     static String welcome = "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
 
-    static String invalidOption = "Please, select a valid option!";
+    static String borrowOption = "Borrow a book by entering its id: ";
+
+    static String returnOption = "Return a book by entering its id: ";
+
+    static String invalidOption = "Please, select a valid option! ";
 
     static String successfulCheckout = "Thank you! Enjoy the book.";
 
